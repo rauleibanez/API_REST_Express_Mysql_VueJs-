@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <navbar-component-vue/>
+  <div class="container-fluid mt-3">
+    <router-view/>
+  </div>
+  
 </template>
 
 <style>
@@ -28,3 +28,6 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup>
+  import NavbarComponentVue from "./components/NavBar.vue"  
+</script>
